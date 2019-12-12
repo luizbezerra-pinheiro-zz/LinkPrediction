@@ -12,20 +12,7 @@
   </style>
 </head>
 <body>
-        <form onsubmit="myFunction()">
-                Range:
-                <input type="text" name="init" id="init" value=1>
-                <input type="text" name="last" id="last" value= 20>
-                <select name="op" id="op">
-                        <option value="3d">3D</option>
-                        <option value="rf">Regular with Physics</option>
-                        <option value="rwf">Regular without Physics</option>
-                        <option value="h">Hierarchical</option>
-                </select>
-                Voisinage degree:
-                <input type="text" name="vos" id="vos" value=2>
-                <input type="submit" value="Submit">
-        </form>
+       
 <div id="mynetwork"></div>
 <script type="text/javascript" src="d3.v5.min.js"></script>
 <script type="text/javascript">
@@ -53,7 +40,7 @@
                     }
                 },
                 font: {
-                    size: 10,
+                    size: 12,
                     face: "Tahoma"
                 }
             },
@@ -173,7 +160,7 @@
             }
             set1.add(element.id);
         });
-        nodesDataset= new vis.DataSet(node.slice(0,100));
+        nodesDataset= new vis.DataSet(node);
         edgesDataset= new vis.DataSet(data[0].edges);
         console.log("ola");
         redrawAll();
