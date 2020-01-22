@@ -1,4 +1,7 @@
 # LinkPrediction
+
+Predict links between pages in a subgraph of the French webgraph (F1-score approx. 89%)
+
 ## This Notebook is meant to be used on Google Colab.
 It mounts the user's Google Drive.
 The locations define by default of the data files are as follows:
